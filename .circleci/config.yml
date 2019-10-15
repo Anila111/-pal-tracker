@@ -102,8 +102,4 @@ workflows:
            - deployToReview
       - deployToProd:
           requires:
-<<<<<<< HEAD
             - canDeployToProduction
-=======
-            - canDeployToProduction
->>>>>>> b97d2ed... Add deployment pipeline
