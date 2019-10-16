@@ -8,5 +8,5 @@ public interface ITimeEntryRepository
     bool Contains(long id);
     TimeEntry Create(TimeEntry toCreate);
     TimeEntry Update(long id, TimeEntry time);
-    List<TimeEntry> List();
+    IEnumerable<TimeEntry> List();
 }

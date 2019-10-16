@@ -18,7 +18,7 @@ public class InMemoryTimeEntryRepository : ITimeEntryRepository
 
     public TimeEntry Find(long id)=> repo[id];
 
-    public List<TimeEntry> List() => repo.Values.ToList();
+    public IEnumerable<TimeEntry> List() => repo.Values.ToList();
 
     public TimeEntry Update(long id, TimeEntry toUpdate)
     {
