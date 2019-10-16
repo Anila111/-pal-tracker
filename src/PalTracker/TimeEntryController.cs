@@ -13,7 +13,7 @@ public class TimeEntryController : ControllerBase
     }
 
     [HttpGet("{id}", Name = "GetTimeEntry")]
-    public IActionResult Read(long id)
+    public IActionResult  Read(long id)
     {
         if (!repo.Contains(id))
             return NotFound();
